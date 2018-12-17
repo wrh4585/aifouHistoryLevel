@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="爱否,aifou,爱否商城,爱否fview,爱否relife,爱否科技,爱否科技商城">
+	<meta name="description" content="爱否aifou.cn-专业的二手商城,提供手机,手机配件,电脑,智能硬件等数码商品的网购、回收、维修服务,为您提供愉悦的网上购物体验!">
+		<title>爱否Fview_aifou.cn-高品质的二手商城</title>
+	<link rel="stylesheet" type="text/css" href="css/index01.css"/>
+	<link rel="shortcut icon" href="bitbug_favicon (2).ico"/>
+</head>
+	<body>
+<!--顶部-->
+	<header class="mheader">
+			<div class="mh_top">	
+				<div class="mt_left">
+					<a href="javascript:"><img id="logoId" src="img/logo.png"/></a>
+					<a href="index01.html">商城首页</a>
+					<a href="recycle.html">回收服务</a>
+					<a href="repair.html">手机维修<span><img src="img/new.gif"/></span></a>				
+				</div>
+				<div class="mt_right">					
+					<a href="javascript:" id="loadingId">登录</a>
+					<a href="register.html" id="zhuce_id">注册</a>
+					<a href="javascript:" id="removeId">注销</a>
+					<a href="javascript:" id="goodsId">我的订单</a>
+					<div class="shopCar">
+						<a href="javascript:"><span></span>购物车<span id="carNum">0</span></a>
+						<div class="carDiv">
+							<div class="sanjiao"></div>
+							<img src="img/car.png"/>
+							<p>空空如也</p>
+							<p>赶快去挑选几件喜欢的商品把~</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="mh_bottom">	
+				<div class="mh_bottom_list">
+					<a href="phone.html">手机</a>					
+					<div class="show_goods">
+						<div class="sanjiao1"></div>
+						<a href=""><img src="img/phone01.png"/>iPhone X</a>
+						<a href=""><img src="img/phone02.png"/>新款iPhone</a>
+						<a href=""><img src="img/phone03.jpg"/>华为</a>
+						<a href=""><img src="img/phone08.png"/>三星</a>
+						<a href=""><img src="img/phone09.png"/>小米</a>
+						<a href=""><img src="img/phone07.png"/>oppo</a>
+					</div>					
+				</div>
+				<div class="mh_bottom_list">
+					<a href="pad.html">平板</a>
+					<div class="show_goods">
+						<div class="sanjiao1"></div>
+						<a href=""><img src="img/pad01.png"/>new ipad</a>
+						<a href=""><img src="img/pad02.png"/>iPad pro</a>
+						<a href=""><img src="img/pad03.jpg"/>ipad nimi</a>
+						
+					</div>
+				</div>
+				<div class="mh_bottom_list">
+					<a href="mac.html">电脑</a>
+					<div class="show_goods">
+						<div class="sanjiao1"></div>
+						<a href=""><img src="img/macpro.png"/>Mac pro 2018款</a>
+						<a href=""><img src="img/macpro.png"/>Mac pro 2017款</a>
+						<a href=""><img src="img/macpro2015.png"/>Mac pro 2015款</a>
+						<a href=""><img src="img/macair.png"/>Mac air</a>					
+					</div>
+				</div>
+				<div class="mh_bottom_list">
+					<a href="watch.html">手表</a>
+					<div class="show_goods">
+						<div class="sanjiao1"></div>
+						<a href=""><img src="img/watch01.png"/>iwatch</a>
+						<a href=""><img src="img/watch02.png"/>iwatch</a>
+						<a href=""><img src="img/watch03.png"/>iwatch</a>
+						<a href=""><img src="img/watch04.png"/>iwatch</a>
+						<a href=""><img src="img/watch05.png"/>iwatch</a>											
+					</div>
+				</div>
+				<div class="mh_bottom_list">
+					<a href="partsgoods.html">精选配件</a>
+					<div class="show_goods">
+						<div class="sanjiao1"></div>
+						<a href=""><img src="img/peijian02.jpg"/>入耳耳机</a>
+						<a href=""><img src="img/peijian01.jpg"/>头戴耳机</a>
+						<a href=""><img src="img/peijian03.jpg"/>外设</a>
+						<a href=""><img src="img/peijian04.jpg"/>充电器</a>					
+					</div>
+				</div>
+				<div class="mh_bottom_list">
+
+					<a href="aifouoriginal.html">爱否开物</a>	
+					<div class="show_goods">
+						<div class="sanjiao1"></div>
+						<a href=""><img src="img/08.jpg"/>立式充电器</a>
+						<a href=""><img src="img/09.jpg"/>无线充电器</a>
+					</div>			
+				</div>
+			</div>
+		</header>
+<!--登录界面-->
+	<section id="loginBox">
+		<div id="logining">
+			<h1>爱否商城欢迎您</h1>
+			<div id="closeDiv"></div>
+	<!--输入界面-->
+			<section class="innerSection">
+				<div class="phone">
+					<input type="text" name="phone" id="username" placeholder="用户名" />
+					<span id="username"></span>
+				</div>
+				<div class="mima">
+					<input type="password" name="mima" id="userpwd01" placeholder="密码" />
+					<span id="usermima"></span>
+				</div>
+				<div class="yzm">
+						<input type="text" name="yzmtext" id="yzmtext" placeholder="验证码" />
+						<div id="yzmId">fx23a8</div>
+					</div>
+					<div class="shoujiyzm">
+						<input type="text" name="phoneyzm" id="yzmtext01" placeholder="手机验证码" value=""/>
+						<input type="button" id="shoujiyzm001" value="获取验证码">
+					</div>
+				<div class="logindiv">
+					<input type="submit" name="" id="loginId" value="登录" />
+				</div>
+			</section>
+	<!--底部-->
+			<div class="weixinDiv">
+				<a href="#">
+					<div id="weichatImg"></div>
+				</a>
+				<h3>微信登录</h3>
+				<a href="register.html" class="z_c">注册爱否</a>
+			</div>
+		</div>
+	</section>
+	<div class="cleardiv"></div>
+<!--轮播图-->
+	<section id="box2" style="cursor: pointer;">
+		<!--<a href="javascript:"><img src="img/01.jpg" class="lbtimg"/></a>
+		<a href="javascript:"><img src="img/04.jpg" class="lbtimg"/></a>
+		<a href="javascript:"><img src="img/lbt01.jpg" class="lbtimg"/></a>-->
+	</section>
+<!--联系我们-->
+	<section class="onlineSevers">
+		<a href="javascript:"><img src="img/lxwm.jpg"/></a>
+		<section id="to_top">
+			<a href="javascript:"></a>
+		</section>
+	</section>
+<!--广告-->
+	<section class="addBox">
+		<a href="javascript:"><img class="addbig" src="img/03.jpg"/></a>
+		<a href="javascript:"><img class="addbig" src="img/02.jpg"/></a>
+		<a href="javascript:"><img class="samlladd" src="img/05.png"/></a>
+		<a href="javascript:"><img class="samlladd" src="img/06.png"/></a>
+		<a href="javascript:"><img class="samlladd" src="img/07.png"/></a>
+	</section>
+<!--推荐-->
+	<section class="recommend">
+		<div class="recom01">
+			<div class="recom01_hd">
+				<h2>为您推荐</h2>
+				<a href="javascript:" class="recom01_hd_a">更多</a>
+			</div>			
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/pad01.png"/>
+					<span class="goodsName">
+						Apple
+					</span>
+					<span class="goodsVers">
+						ipad 2018 32G Cellular版
+					</span>
+					<span class="goodsPrice">
+						￥2399
+					</span>
+				</a>
+			</div>
+			
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/phone10.png"/>
+					<span class="goodsName">
+						Apple
+					</span>
+					<span class="goodsVers">
+						iPhone Xs Max 256G 联通4G/移动4G/电信4G
+					</span>
+					<span class="goodsPrice">
+						￥9399
+					</span>
+				</a>
+			</div>
+			
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/macpro.png"/>
+					<span class="goodsName">
+						Apple
+					</span>
+					<span class="goodsVers">
+						Mac pro 2018款
+					</span>
+					<span class="goodsPrice">
+						￥11399
+					</span>
+				</a>
+			</div>
+			
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/watch05.png"/>
+					<span class="goodsName">
+						Apple
+					</span>
+					<span class="goodsVers">
+						Apple Watch Series 3 铝金属表壳 42MM 国行蜂窝版
+					</span>
+					<span class="goodsPrice">
+						￥2899
+					</span>
+				</a>
+			</div>
+			
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/phone01.png"/>
+					<span class="goodsName">
+						Apple
+					</span>
+					<span class="goodsVers">
+						iPhone X 256G 联通4G/移动4G/电信4G
+					</span>
+					<span class="goodsPrice">
+						￥5699
+					</span>
+				</a>
+			</div>
+			
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/pad02.png"/>
+					<span class="goodsName">
+						Apple
+					</span>
+					<span class="goodsVers">
+						iPad Pro 9.7英寸（2016） 128G 国行WIFI版
+					</span>
+					<span class="goodsPrice">
+						￥2399
+					</span>
+				</a>
+			</div>
+			
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/phone03.jpg"/>
+					<span class="goodsName">
+						华为
+					</span>
+					<span class="goodsVers">
+						P20 Pro 128G 联通4G/移动4G/电信4G
+					</span>
+					<span class="goodsPrice">
+						￥4499
+					</span>
+				</a>
+			</div>
+			
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/phone08.png"/>
+					<span class="goodsName">
+						SAMSUNG
+					</span>
+					<span class="goodsVers">
+						Galaxy Note 8 联通4G/移动4G/电信4G
+					</span>
+					<span class="goodsPrice">
+						￥3199
+					</span>
+				</a>
+			</div>	
+			
+			<div class="recom01_hd">
+				<h2>精选配件</h2>
+				<a href="javascript:" class="recom01_hd_a">更多</a>
+			</div>
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/08.jpg"/>
+					<span class="goodsName">
+						爱否Fview
+					</span>
+					<span class="goodsVers">
+						【预售】 【爱否开物】  立式无线快充
+					</span>
+					<span class="goodsPrice">
+						￥299
+					</span>
+				</a>
+			</div>
+			<div class="recom01_goods">
+				<a href="javascript:" class="goodsList">
+					<img src="img/09.jpg"/>
+					<span class="goodsName">
+						爱否Fview
+					</span>
+					<span class="goodsVers">
+						【预售】 【爱否开物】  风冷无限无线快充
+					</span>
+					<span class="goodsPrice">
+						￥79
+					</span>
+				</a>
+			</div>
+		<!--</div>-->
+	</section>
+<!--服务-->
+	<section class="seversbox">
+		<a href="javascript:"><img class="seversbox_img" src="img/severs02.png"/></a>
+		<a href="javascript:"><img class="seversbox_img" src="img/severs01.png"/></a>
+	</section>
+<!--底部-->
+	<footer class="m-footer">
+		<div class="foot_top">
+			<ul class="foot_cont">
+				<li><h3>服务条款</h3></li>
+				<li><a href="javascript:">评级标准</a></li>
+				<li><a href="javascript:">售后服务标准</a></li>
+				<li><a href="javascript:">回收服务标准</a></li>
+				<li><a href="javascript:">维修服务条款</a></li>
+			</ul>
+			<ul class="foot_cont">
+				<li><h3>为您解答</h3></li>
+				<li><a href="javascript:">常见问题</a></li>
+				<li><a href="javascript:">招贤纳士</a></li>
+			</ul>
+			<div class="foot_cont_right">
+				<img src="img/wecat.jpg"/>
+				<a href="javascript:">
+					<span class="weoboImg">
+					
+					</span>
+					<span>新浪微博&nbsp;</span>
+				</a>
+				<span>关注微信客服</span>
+				<h2>客服热线：0755-25110526</h2>
+			</div>
+		</div>
+		<div class="foot_bottom">
+			<span>京ICP证160992号 Copyright© 2016-2021</span>
+		</div>
+	</footer>
+	</body>
+</html>
+<!--<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>-->
+<script type="text/javascript" src="js/js_commonTools.js" ></script>
+<script type="text/javascript" src="js/js_move.js" ></script>
+<script type="text/javascript" src="js/cookie_tools.js" ></script>
+<script type="text/javascript" src="js/index.js" ></script>
+<script type="text/javascript">
+window.onload = function(){
+//	showImg();	
+
+/*function showImg(){
+	let count = 0;
+	setInterval(function(){
+		let num = count;
+		count++;
+		if(count>$(".lbtimg").length-1){
+			count =0;
+		}
+		     //循环所有的图片
+		$("#box2 a img").each(function(){
+			$("#box2 a img").css("display","none");
+			  //对两张图片进行淡入淡出
+			$("#box2 a img").eq(num).fadeOut("fast","swing");
+			$("#box2 a img").eq(count).fadeIn("fast","swing");
+		},2000);
+	});
+}*/
+
+	let s1 = new Slider(
+			$("#box2"),
+			1920,
+			368,
+			["img/01.jpg","img/04.jpg","img/lbt01.jpg"],
+			"white",
+			"#333",
+			10,
+			true,
+			3000
+	);
+	s1.autoPlay();
+
+	getyzmfn1();
+	getyzmfn();
+	shouyzmfn();
+	getyzmfn();
+	
+	let goTop = document.getElementById("to_top");
+	goTop.style.opacity = 0;
+	goTop.onclick = function(){
+		var num = document.documentElement.scrollTop || document.body.scrollTop;
+		toTop();
+		function toTop(){
+			if(num>0){
+				num -= 50;
+				document.documentElement.scrollTop = num;
+				setTimeout(toTop,20);
+			}
+		}
+	}
+	document.onscroll = function(){
+		var num2 = document.documentElement.scrollTop || document.body.scrollTop;
+		goTop.style.opacity =(num2-200)/500;
+	}
+
+	document.getElementById("loadingId").onclick = function(){
+		document.getElementById("loginBox").style.cssText = "display: block;";
+//		document.getElementById("logining").style.cssText = "";
+	}
+	document.getElementById("closeDiv").onclick = function(){
+		document.getElementById("loginBox").style.display = "none";
+	}
+	
+	document.getElementById("goodsId").onclick = function(){
+		document.getElementById("loginBox").style.cssText = "display: block;";
+//		document.getElementById("logining").style.cssText = "";
+	}
+	document.getElementById("closeDiv").onclick = function(){
+		document.getElementById("loginBox").style.display = "none";
+	}
+	
+	loginfn();
+	getuser();
+	removefn();
+	
+}
+//登录验证
+	let tt = "username";
+	function loginfn(){
+		$("#loginId").onclick = function(){
+			let xhr = new XMLHttpRequest();
+			
+			xhr.open("post","php/login.php",true);
+		console.log("2、"+xhr.readyState);
+		xhr.onreadystatechange = function(){
+			console.log(xhr.readyState);
+				if(xhr.readyState == 4 && xhr.status == 200){
+					console.log("结果"+xhr.responseText);
+					if(xhr.responseText == "1"){
+//						let tt = "username";
+						alert("恭喜您登录成功！");
+						$("#loginBox").style.display="none";
+						addCookie(tt,JSON.stringify({
+							"username":$("#username").value,
+							"userpass":$("userpass").value
+						}),7);
+						getuser();
+//						console.log(document.cookie);
+//						var w_word = getCookie(tt);
+//						console.log("咳咳"+w_word);
+//						console.log(typeof w_word);
+//						console.log(w_word.length);
+//						console.log(JSON.parse(w_word));
+//						let ttt = JSON.parse(w_word);
+//						console.log(typeof ttt);
+//						console.log(ttt);
+//						var w_w_result = ttt.username;
+//						console.log("tt:"+w_w_result);
+//						$("#loadingId").innerHTML = "欢迎您:"+w_w_result+"!";
+					}else{
+						alert("用户名或密码输入有误，请重新输入");
+					}
+				}
+			}
+				xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+				let sendStr = "userId="+$("#username").value+"&userPass="+$("#userpwd01").value;
+				xhr.send(sendStr);
+		}
+	}
+	function getuser(){
+		var w_word = getCookie(tt);
+		let ttt = JSON.parse(w_word);
+		var w_w_result = ttt.username;
+		$("#loadingId").innerHTML = "欢迎您:"+w_w_result+"!";
+		$("#removeId").style.display = "block";
+		$("#zhuce_id").style.display = "none";
+	}
+	function removefn(){
+		$("#removeId").onclick = function(){
+			removeCookie(tt);
+			window.location.href="index01.html";
+			alert("您已注销登录，请重新登录！");		
+		}
+	}
+	
+	function yzmfn(){
+		var str = "";
+		for(var i = 0 ; i < 6 ; i++){
+			str += (parseInt(Math.random()*16)).toString(16);
+		}
+		return str;
+	}
+	function getyzmfn1(){
+		$("#yzmId").innerHTML = yzmfn();
+		$("#yzmId").onclick = function(){
+			$("#yzmId").innerHTML = yzmfn();
+		}
+	}
+	function getyzmfn(){
+		getyzmfn1();
+		$("#yzmtext").onblur = function(){
+			if($("#yzmtext").value !=$("#yzmId").innerHTML){
+				getyzmfn1();
+				alert("验证码输入错误，请重新输入！(点击验证码刷新)");
+			}
+		}
+	}
+	function shouyzmfn(){	
+		$("#shoujiyzm001").onclick = function(){
+			$("#yzmtext01").value = yzmfn();
+			alert("验证码已经发送，请注意查收！");
+		}
+	}
+	function getyzmfn(){
+		getyzmfn1();
+		$("#yzmtext").onblur = function(){
+			if($("#yzmtext").value !=$("#yzmId").innerHTML){
+				alert("验证码输入错误，请重新输入！(点击验证码刷新)")
+			}
+		}
+	}
+</script>

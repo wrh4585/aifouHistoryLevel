@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="爱否,aifou,爱否商城,爱否fview,爱否relife,爱否科技,爱否科技商城">
+		<meta name="description" content="爱否aifou.cn-专业的二手商城,提供手机,手机配件,电脑,智能硬件等数码商品的网购、回收、维修服务,为您提供愉悦的网上购物体验!">
+		<title>欢迎注册爱否账号</title>
+		<link rel="stylesheet" type="text/css" href="css/registre.css"/>
+		<link rel="shortcut icon" href="bitbug_favicon (2).ico"/>
+	</head>
+	<body>
+		<header class="mheader">
+			<div class="mh_top">	
+				<div class="mt_left">
+					<a href="javascript:"><img id="logoId" src="img/logo.png"/></a>
+					<a href="index01.html">商城首页</a>
+					<a href="javascript:">回收服务</a>
+					<a href="javascript:">手机维修<span><img src="img/new.gif"/></span></a>				
+				</div>
+				<div class="mt_right">					
+					<a href="index01.html" id="loadingId" title="点击去首页登录">欢迎来到爱否商城，点击开启精彩之旅</a>
+					<!--<a href="javascript:" id="goodsId">我的订单</a>-->
+					<div class="shopCar">
+						<a href="javascript:"><span></span>购物车<span id="carNum">0</span></a>
+					<div class="carDiv">
+						<div class="sanjiao"></div>
+						<img src="img/car.png"/>
+						<p>空空如也</p>
+						<p>赶快去挑选几件喜欢的商品把~</p>
+					</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="mh_bottom">			
+					<a href="phone.html">手机</a>
+					<a href="pad.html">平板</a>
+					<a href="mac.html">电脑</a>
+					<a href="watch.html">手表</a>					
+					<a href="partsgoods.html">精选配件</a>
+					<a href="aifouoriginal.html">爱否开物</a>				
+			</div>
+		</header>
+		<section id="loginBox">				
+			<div id="logining">			
+				<h1>爱否商城欢迎您的到来！</h1>
+				<div id="closeDiv"></div>
+		<!--输入界面-->
+				<section class="innerSection">
+					<div class="phone">
+						请输入用户名：<input type="text" name="phone" id="username" placeholder="推荐手机号码注册" /><br />
+						<span id="usernameSpan">用户名有误，以字母开头，包含大小写及数字长度6~16位</span>
+						<span id="usernameSpan01">用户名可以使用！</span>
+						<span id="usernameSpan02">用户名已经存在,请直接登录！</span>
+					</div>
+					<div class="userpwd">
+						请输入密码：<input id="userpwd01" type="password" placeholder="密码" />
+						<span id="usermima">密码长度6~16位，包含字母数字特殊符号</span><br/>
+						请重复密码：<input id="userpwd02" type="password" placeholder="重复密码"/>
+						<span id="userpwdSpan">两次输入的不一致，请重新输入！</span>
+					</div>
+					<div class="yzm">
+						<input type="text" name="yzmtext" id="yzmtext" placeholder="验证码" />
+						<div id="yzmId">fx23a8</div>
+					</div>
+					<div class="shoujiyzm">
+						<input type="text" name="phoneyzm" id="yzmtext01" placeholder="手机验证码" value=""/>
+						<input type="button" id="shoujiyzm001" value="获取验证码">
+					</div>
+					<div class="logindiv">
+						<input type="button" name="" id="btn01" value="注册" />
+					</div>
+				</section>
+		<!--底部-->
+				<div class="weixinDiv">
+					<a href="#">
+						<div id="weichatImg"></div>
+					</a>
+					<h3>欢迎使用微信登录</h3>
+				</div>
+			</div>
+			<div class="regimgdiv">
+				<!--<img src="img/bjt0001.png"/>-->
+			</div>
+	</section>
+<!--底部-->
+	<footer class="m-footer">
+		<div class="foot_top">
+			<ul class="foot_cont">
+				<li><h3>服务条款</h3></li>
+				<li><a href="javascript:">评级标准</a></li>
+				<li><a href="javascript:">售后服务标准</a></li>
+				<li><a href="javascript:">回收服务标准</a></li>
+				<li><a href="javascript:">维修服务条款</a></li>
+			</ul>
+			<ul class="foot_cont">
+				<li><h3>为您解答</h3></li>
+				<li><a href="javascript:">常见问题</a></li>
+				<li><a href="javascript:">招贤纳士</a></li>
+			</ul>
+			<div class="foot_cont_right">
+				<img src="img/wecat.jpg"/>
+				<a href="javascript:">
+					<span class="weoboImg">
+					
+					</span>
+					<span>新浪微博&nbsp;</span>
+				</a>
+				<span>关注微信客服</span>
+				<h2>客服热线：0755-25110526</h2>
+			</div>
+		</div>
+		<div class="foot_bottom">
+			<span>京ICP证160992号 Copyright© 2016-2021</span>
+		</div>
+	</footer>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+<script type="text/javascript" src="js/js_commonTools.js" ></script>
+<script type="text/javascript">
+    window.onload = function(){
+		namefn();
+		passfn01();
+		passfn02();
+		getyzmfn();
+		shouyzmfn();
+		tijiao();
+	}
+	function namefn(){
+		$("#username").onblur = function(){
+			if(this.value!=""){
+				var reg = /^[a-z]\w{5,15}$/i;
+				if(reg.test(this.value)){
+					$("#usernameSpan").innerHTML ="√";
+					$("#usernameSpan").style.color= "green";
+				}else{
+					$("#usernameSpan").style.display = "block";
+					$("#usernameSpan").style.color = "red";
+				}
+			}else{
+				alert("用户名不能为空！");
+			}
+			
+		}
+	}
+	function passfn01(){
+		$("#userpwd01").onblur = function(){
+			var reg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,15}$/gi;
+			if(reg.test(this.value)){
+				$("#usermima").innerHTML ="√";
+				$("#usermima").style.color= "green";
+			}else{
+				$("#usermima").style.display = "block";
+				$("#usermima").style.color = "red";
+			}
+		}
+	}
+	function passfn02(){
+		$("#userpwd02").onblur = function(){
+			if($("#userpwd01").value != $("#userpwd02").value){
+				$("#userpwdSpan").style.display = "block";
+				$("#userpwdSpan").style.color = "red";
+			}else{
+				$("#userpwdSpan").style.display = "none";
+			}
+		}
+	}
+	function yzmfn(){
+		var str = "";
+		for(var i = 0 ; i < 6 ; i++){
+			str += (parseInt(Math.random()*16)).toString(16);
+		}
+		return str;
+	}
+	function getyzmfn1(){
+		$("#yzmId").innerHTML = yzmfn();
+		$("#yzmId").onclick = function(){
+			$("#yzmId").innerHTML = yzmfn();
+		}
+	}
+	function getyzmfn(){
+		getyzmfn1();
+		$("#yzmtext").onblur = function(){
+			if($("#yzmtext").value !=$("#yzmId").innerHTML){
+				getyzmfn1();
+				alert("验证码输入错误，请重新输入！(点击验证码刷新)");
+			}
+		}
+	}
+	function shouyzmfn(){	
+		$("#shoujiyzm001").onclick = function(){
+			$("#yzmtext01").value = yzmfn();
+			alert("验证码已经发送，请注意查收！");
+		}
+	}
+	/*
+	function tijiao(){
+		$("#btn01").onclick = function(){
+			let xhr = new XMLHttpRequest();
+			let sendStr = "username="+$("#username").value+"&userpass="+$("#userpwd01").value;
+			xhr.open("get","php/commomregister.php?"+sendStr,true);
+		console.log("2、"+xhr.readyState);
+		xhr.onreadystatechange = function(){
+			console.log(xhr.readyState);
+				if(xhr.readyState == 4 && xhr.status == 200){
+					console.log("结果"+xhr.responseText);
+					if(xhr.responseText == "1"){
+						alert("恭喜您注册成功！");
+						window.location.href="index01.html";
+					}else{
+						alert("此用户已经注册，赶紧去登录吧！");
+					}
+				}
+			}
+			xhr.send();
+		}	
+	}*/
+	
+	function tijiao(){	
+		$("#btn01").onclick = function(){
+				let xhr = new XMLHttpRequest();
+				xhr.open("post","php/addUser01.php",true);
+				console.log("2、"+xhr.readyState);
+				xhr.onreadystatechange = function(){
+					console.log(xhr.readyState);
+						if(xhr.readyState == 4 && xhr.status == 200){
+							console.log("结果"+xhr.responseText);
+							if(xhr.responseText == "1"){
+								alert("恭喜您注册成功！");
+								window.location.href="index01.html";
+							}else{
+								alert("此用户已经注册，赶紧去登录吧！");
+							}
+						}
+					}
+				xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+				let sendStr = "userId="+$("#username").value+"&userPass="+$("#userpwd01").value;
+					xhr.send(sendStr);		
+		}	
+	}
+	
+</script>
